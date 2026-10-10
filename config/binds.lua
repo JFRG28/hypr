@@ -92,6 +92,7 @@ hl.bind(mainMod .. " + Space",      hl.dsp.exec_cmd(noctCall .. "panel-toggle la
 hl.bind(mainMod .. " + period",     hl.dsp.exec_cmd(noctCall .. "panel-toggle launcher /emo"))
 hl.bind(mainMod .. " + L",          hl.dsp.exec_cmd(noctCall .. "session lock"))
 hl.bind(mainMod .. " + ALT + C",    hl.dsp.exec_cmd(noctCall .. "panel-toggle session"))
+hl.bind("ALT + F4",                 hl.dsp.exec_cmd(noctCall .. "panel-toggle session"))
 
 ---------------------------
 ---- HARDWARE CONTROLS ----
