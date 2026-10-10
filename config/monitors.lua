@@ -7,9 +7,18 @@
 --     scale     = "1",
 -- })
 
+-- Samsung Odyssey G8 (3440x1440 @ 174.96Hz)
 hl.monitor({
     output    = MONITOR1,
-    mode      = "preferred",
+    mode      = "3440x1440@174.96",
     position  = "auto",
-    scale     = "auto",
+    scale     = "1",
+})
+
+-- Huawei XWU-CBA (2560x1440 @ 164.80Hz)
+hl.monitor({
+    output    = MONITOR2,
+    mode      = "2560x1440@164.80",
+    position  = "auto",
+    scale     = "1",
 })
