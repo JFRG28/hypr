@@ -1,0 +1,6 @@
+# Vim/Neovim swap files
+*.swp
+*.swo
+.*.swp
+.binds.lua.swp
+config/.binds.lua.swp
