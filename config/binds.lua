@@ -118,9 +118,10 @@ hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd(noctCall .. "brightness-down"),
 -------------------
 
 -- Screen Capture
-hl.bind(mainMod .. " + P",     hl.dsp.exec_cmd("hyprpicker -a -n"))
-hl.bind("Print",               hl.dsp.exec_cmd(noctCall .. "screenshot-region"))
-hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd(noctCall .. "screenshot-fullscreen"))
+hl.bind(mainMod .. " + P",         hl.dsp.exec_cmd("hyprpicker -a -n"))
+hl.bind("Print",                   hl.dsp.exec_cmd(noctCall .. "screenshot-region"))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd(noctCall .. "screenshot-region"))
+hl.bind(mainMod .. " + Print",     hl.dsp.exec_cmd(noctCall .. "screenshot-fullscreen"))
 
 -- Theming and Wallpaper
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(noctCall .. "panel-toggle wallpaper"))
@@ -164,5 +165,4 @@ hl.bind(mainMod .. " + CONTROL + mouse_up",   hl.dsp.focus({ workspace = "m-1" }
 hl.bind(mainMod .. " + CONTROL + mouse_down", hl.dsp.focus({ workspace = "m+1" }))
 
 -- Special workspace (scratchpad)
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special" }))
 hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special())
